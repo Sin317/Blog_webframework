@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+  <meta charset='utf-8'>
+  <link rel='icon' type='image/x-icon' href='icon.png'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<style>
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:  #800000;
+    }
+    #main1{
+      background-color: white;
+
+    }
+    #bill1{
+      width: 120px;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height  #f1f1f1 */
+    .sidenav {
+      padding-top: 20px;
+      background-color:   #A6D785;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    #about{
+      color: black;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<nav class='navbar navbar-inverse'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#myNavbar'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>                        
+      </button>
+    </div>
+    <div class='collapse navbar-collapse' id='myNavbar'>
+      <ul class='nav navbar-nav'>
+        <li><a href='index.php'>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='signup.php'><span class='glyphicon glyphicon-edit'></span>Sign Up</a></li>
+        <li><a href="#">Tutorial </a></li>
+        <li class="active"><a href='#'>Contact</a></li>
+        <li><a href='adminlog.php'>Admin</a></li>
+      </ul>
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a href='login.php'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class='col-xl-2 sidenav'>
+    <div class='well'>
+        <p> Email to: npncreations@gmail.com </p>
+    </div>
+    <div class='well'>
+        <p> Location: 1st Floor,B block<br>PES University.</p>
+    </div>
+</div>
+<br>
+<h2> Feedback </h2>
+<div class="container">
+  <form >
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Branch</label>
+    <select id="country" name="country">
+      <option value="cse">CSE</option>
+      <option value="ece">ECE</option>
+      <option value="eee">EEE</option>
+      <option value="bt">BT</option>
+      <option value="mech">Mech</option>
+    </select>
+
+    <label for="subject">Comments:</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<footer class='container-fluid text-center'>
+  <p>&copy;NKN collaborations 2018-2019</p>
+</footer>
+
+</body>
+</html>
