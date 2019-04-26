@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<title> Bill </title>
+</head>
+
+<body>
+{% for bill in bills %}
+<div>
+	<p> Bill Number: {{bill.Bill_number}} </p>
+	<p> Date: {{bill.date_d}} </p>
+	<p> Category: {{bill.Category}} </p>
+	<p> Spent: {{bill.Spent}} </p>
+</div>
+{% endfor %}
+</body>
+</html>
